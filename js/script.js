@@ -49,4 +49,9 @@ var swiper = new Swiper(".review-slider", {
 var dark = document.getElementById("dark");
 dark.onclick = function () {
   document.body.classList.toggle("dark-theme");
+  if (dark.classList.contains("fa-moon")) {
+    dark.classList.replace("fa-moon", "fa-sun");
+  } else {
+    dark.classList.replace("fa-sun", "fa-moon");
+  }
 };
